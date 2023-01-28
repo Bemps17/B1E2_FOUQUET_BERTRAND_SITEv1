@@ -1,0 +1,1330 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.enconstruction img {
+  width: 100%;
+  margin-bottom: -1rem;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* top navlogo+ adress */
+.top {
+  background-color: #2e314b;
+  height: 30vh;
+
+  padding-left: 50px;
+  padding-right: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.top address {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+}
+
+.article1 {
+  display: grid;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  grid-template-columns: auto auto auto auto;
+  grid-template-areas: " image image . texte ";
+  column-gap: 2rem;
+}
+
+.article1 img {
+  grid-area: image;
+  width: 80%;
+
+}
+.article1text {
+  align-self: center;
+  grid-area: texte;
+}
+.article1 h1 span {
+  color: cyan;
+}
+.article1 h1 {
+  margin-bottom: 2rem;
+}
+
+.article2 {
+  margin-bottom: 3rem;
+}
+
+.phone {
+  font-size: 2rem;
+}
+
+.logo {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  padding-left: 50px;
+}
+
+.logo img {
+  height: 100px;
+}
+
+.top .logo {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+}
+.logo p {
+  line-height: 20px;
+}
+
+.logo p span {
+  color: yellow;
+}
+
+/* barre de nav */
+
+.navcontainer {
+  display: grid;
+  background: grey;
+  /* justify-self: center;
+  align-self: center; */
+
+  height: 10vh;
+}
+
+.navbar {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  /* justify-self: end; */
+  align-self: center;
+  justify-content: space-around;
+}
+
+.logo a img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+nav ul {
+  /* display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr;
+  align-self: center;
+  justify-self: center; */
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+nav a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  cursor: pointer;
+  color: #2e314b;
+  transition: 500ms;
+}
+
+.iconhome {
+  display: none;
+}
+.iconmail {
+  display: none;
+}
+
+main {
+  margin-right: 10rem;
+  margin-left: 10rem;
+}
+.backgroundsection1 {
+  display: grid;
+
+  grid-template-areas:
+    "h1 h1 h1 "
+    "button button button";
+  text-align: center;
+  gap: 0rem;
+
+  height: 40vh;
+
+  background-color: #2e314b;
+}
+
+.backgroundsection1 h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-transform: uppercase;
+
+  justify-self: center;
+  align-self: center;
+  grid-area: h1;
+  margin-top: 2rem;
+}
+
+.backgroundsection1 button {
+  grid-area: button;
+  cursor: pointer;
+  color: white;
+  justify-self: center;
+  align-self: center;
+  padding: 1rem 1rem;
+  margin-bottom: 5rem;
+  background: rgb(255, 0, 0);
+  border-style: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.backgroundsection1 button:hover  {
+
+
+ 
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  
+ 
+  background: rgb(255, 0, 0);
+}
+
+/* debut section titre+image */
+.main2 {
+  /* margin-left: 2rem;
+  margin-right: 2rem; */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: white;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+
+  display: grid;
+  grid-template-areas:
+    "titre1 img"
+    "texte1 img";
+}
+
+.main2 .textleft1 {
+  display: grid;
+  grid-template-areas:
+    "."
+    "titre1"
+    "texte1";
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main2 h2 {
+  padding-bottom: 2rem;
+  grid-area: titre1;
+  font-size: 2rem;
+}
+.main2 p {
+  display: flex;
+  grid-area: texte1;
+}
+
+.main2 img {
+  width: 100%;
+  min-width: 50%;
+}
+.textleft1 span {
+  color: aqua;
+}
+.intercard {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.intercard h2 {
+  color: aqua;
+  font-size: medium;
+}
+.intercard h3 {
+  font-size: 1.5rem;
+}
+
+/* .backgroundsection1 span h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  text-align: center;
+}
+
+.fleche {
+  display: flex;
+  font-family: "PatrickHand-Regular";
+  font-size: 6rem;
+  justify-content: center;
+  margin-top: 6rem;
+  text-decoration: none;
+  color: #000;
+}
+.fleche a:hover {
+  background-color: rgba(139, 0, 0, 0.198);
+  border-radius: 100%;
+  width: 25%;
+} */
+/* #title1 {
+  visibility: hidden;
+} */
+
+.article-container {
+  gap: 30px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+
+  grid-template-areas:
+    "card1 card2"
+    "card3 card4";
+}
+
+article h3 {
+  text-transform: uppercase;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+article h3 span {
+  color: aqua;
+}
+article {
+  margin-bottom: 15%;
+}
+
+.card1 {
+  grid-area: card1;
+}
+/* .card1 span{
+  color: aqua;
+} */
+.card2 {
+  grid-area: card2;
+}
+.card3 {
+  grid-area: card3;
+}
+.card4 {
+  grid-area: card4;
+}
+
+.article-container img {
+  width: 100%;
+}
+
+/* .grid1 {
+  background-image: url(https://img.freepik.com/photos-premium/majestueuse-montagne-enneigee-alpiniste-colline-neige-au-lever-du-soleil_49071-703.jpg?w=900);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+} */
+article {
+  position: relative;
+  margin-bottom: 35%;
+}
+.card1 {
+  color: rgb(0, 0, 0);
+
+  display: flex;
+  flex-direction: column;
+
+  /* row-gap: 1rem; */
+
+  /* grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  text-align: left;
+  justify-self: center;
+  align-self: center; */
+}
+.card1 h5 {
+  position: absolute;
+  bottom: -20%;
+  left: 10%;
+}
+.card2 h5 {
+  position: absolute;
+  bottom: -20%;
+  left: 10%;
+}
+.card3 h5 {
+  position: absolute;
+  bottom: -20%;
+  left: 10%;
+}
+.card4 h5 {
+  position: absolute;
+  bottom: -20%;
+  left: 10%;
+}
+.card2 {
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  /* display: grid;
+  row-gap: 1rem;
+  
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  text-align: left;
+  justify-self: center;
+  align-self: center; */
+}
+
+.card3 {
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  /* display: grid;
+  row-gap: 1rem;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  text-align: left;
+  justify-self: center;
+  align-self: center; */
+}
+.card4 {
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+
+  /* display: grid;
+  row-gap: 1rem;
+  
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  text-align: left;
+  justify-self: center;
+  align-self: center; */
+}
+
+/* .card1 img { z-index:-1;}
+.card2 img { z-index: -1;}
+.card3 img { z-index: -1;}
+.card4 img { z-index: -1;} */
+
+.topfooter {
+  /* position: relative; */
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  background-color: #2e314b;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+footer h3 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  top: 20%;
+  text-transform: uppercase;
+}
+footer address {
+  margin-top: 1rem;
+  color: grey;
+  display: flex;
+  flex-direction: column;
+}
+
+.copyright {
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: #141736;
+}
+.copyright .coeur {
+  color: red;
+  flex-direction: row;
+  justify-content: center;
+}
+.copyright .dream {
+  color: white;
+}
+
+/* Styles pour les écrans larges (ordinateurs)
+@media only screen and (min-width: 1024px) {
+  .article-container {
+    width: 100%;
+
+    gap: 10px;
+    display: grid;
+
+    grid-template-areas: 
+    " card1 card2 " 
+    " card3 card4 ";
+  }
+} */
+
+@media only screen and (max-width: 1248px) {
+  header {
+    height: 30vh;
+  }
+
+  main {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .backgroundsection1 {
+    display: grid;
+
+    grid-template-areas:
+      "h1 h1 h1 "
+      "button button button";
+    text-align: center;
+    gap: 0rem;
+
+    height: 20vh;
+
+    background-color: #2e314b;
+  }
+
+  .backgroundsection1 h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+
+    justify-self: center;
+    align-self: center;
+    grid-area: h1;
+    margin-top: 1rem;
+  }
+
+  .backgroundsection1 button {
+    grid-area: button;
+    justify-self: center;
+    align-self: center;
+    padding: 1rem 1rem;
+    margin-bottom: 2rem;
+    background: rgb(255, 0, 0);
+    border-style: none;
+    border-radius: 5px;
+  }
+  .backgroundsection1 button a {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgb(255, 0, 0);
+  }
+
+  .article-container {
+    width: 100%;
+
+    gap: 10px;
+    display: grid;
+
+    grid-template-areas:
+      "card1 card2  "
+      "card4 card3 ";
+  }
+
+  .main2 {
+    /* margin-left: 2rem;
+    margin-right: 2rem; */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: white;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+
+    display: grid;
+    grid-template-areas:
+      "titre1 img"
+      "texte1 img";
+  }
+
+  .main2 .textleft1 {
+    display: grid;
+    grid-template-areas:
+      "."
+      "titre1"
+      "texte1";
+
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .main2 h2 {
+    padding-bottom: 2rem;
+    grid-area: titre1;
+    font-size: 2rem;
+  }
+  .main2 p {
+    display: flex;
+    grid-area: texte1;
+  }
+
+  /* .main2 img{
+ width: 80%;
+   
+   
+  }  */
+  .textleft1 span {
+    color: aqua;
+  }
+  .intercard {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .intercard h2 {
+    color: aqua;
+    font-size: medium;
+  }
+  .intercard h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Styles pour les écrans moyens (tablettes) */
+@media only screen and (max-width: 1023px) {
+  header {
+    height: 30vh;
+  }
+
+  main {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .backgroundsection1 {
+    display: grid;
+
+    grid-template-areas:
+      "h1 h1 h1 "
+      "button button button";
+    text-align: center;
+    gap: 0rem;
+
+    height: 20vh;
+
+    background-color: #2e314b;
+  }
+
+  .backgroundsection1 h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+
+    justify-self: center;
+    align-self: center;
+    grid-area: h1;
+    margin-top: 1rem;
+  }
+
+  .backgroundsection1 button {
+    grid-area: button;
+    justify-self: center;
+    align-self: center;
+    padding: 1rem 1rem;
+    margin-bottom: 2rem;
+    background: rgb(255, 0, 0);
+    border-style: none;
+    border-radius: 5px;
+  }
+  .backgroundsection1 button a {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgb(255, 0, 0);
+  }
+
+  .article-container {
+    width: 100%;
+
+    gap: 10px;
+    display: grid;
+
+    grid-template-areas:
+      "card1 card2  "
+      "card4 card3 ";
+  }
+
+  .main2 {
+    /* margin-left: 2rem;
+    margin-right: 2rem; */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: white;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+
+    display: grid;
+    grid-template-areas:
+      "titre1 img"
+      "texte1 img";
+  }
+
+  .main2 .textleft1 {
+    display: grid;
+    grid-template-areas:
+      "."
+      "titre1"
+      "texte1";
+
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .main2 h2 {
+    padding-bottom: 2rem;
+    grid-area: titre1;
+    font-size: 2rem;
+  }
+  .main2 p {
+    display: flex;
+    grid-area: texte1;
+  }
+
+  /* .main2 img{
+ width: 80%;
+   
+   
+  }  */
+  .textleft1 span {
+    color: aqua;
+  }
+  .intercard {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .intercard h2 {
+    color: aqua;
+    font-size: medium;
+  }
+  .intercard h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  header {
+    height: 30vh;
+  }
+
+
+  main {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+.top .phone{
+  font-size: 110%;
+}
+
+  .backgroundsection1 {
+    display: grid;
+
+    grid-template-areas:
+      "h1 h1 h1 "
+      "button button button";
+    text-align: center;
+    gap: 0rem;
+
+    height: 20vh;
+
+    background-color: #2e314b;
+  }
+
+  .backgroundsection1 h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+
+    justify-self: center;
+    align-self: center;
+    grid-area: h1;
+    margin-top: 1rem;
+  }
+
+  .backgroundsection1 button {
+    grid-area: button;
+    justify-self: center;
+    align-self: center;
+    padding: 1rem 1rem;
+    margin-bottom: 2rem;
+    background: rgb(255, 0, 0);
+    border-style: none;
+    border-radius: 5px;
+  }
+  .backgroundsection1 button a {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgb(255, 0, 0);
+  }
+
+  .article-container {
+    width: 100%;
+
+    gap: 10px;
+    display: grid;
+
+    grid-template-areas:
+      "card1 card2  "
+      "card4 card3 ";
+  }
+
+  .main2 {
+    /* margin-left: 2rem;
+    margin-right: 2rem; */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: white;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+
+    display: grid;
+    grid-template-areas:
+      "titre1 img"
+      "texte1 img";
+  }
+
+  .main2 .textleft1 {
+    display: grid;
+    grid-template-areas:
+      "."
+      "titre1"
+      "texte1";
+
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .main2 h2 {
+    padding-bottom: 2rem;
+    grid-area: titre1;
+    font-size: 2rem;
+  }
+  .main2 p {
+    display: flex;
+    grid-area: texte1;
+  }
+
+  /* .main2 img{
+ width: 80%;
+   
+   
+  }  */
+  .textleft1 span {
+    color: aqua;
+  }
+  .intercard {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .intercard h2 {
+    color: aqua;
+    font-size: medium;
+  }
+  .intercard h3 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header {
+    height: 30vh;
+  }
+
+  main {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .backgroundsection1 {
+    display: grid;
+
+    grid-template-areas:
+      "h1 h1 h1 "
+      "button button button";
+    text-align: center;
+    gap: 0rem;
+
+    height: 20vh;
+
+    background-color: #2e314b;
+  }
+
+  .backgroundsection1 h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+
+    justify-self: center;
+    align-self: center;
+    grid-area: h1;
+    margin-top: 1rem;
+  }
+
+  .backgroundsection1 button {
+    grid-area: button;
+    justify-self: center;
+    align-self: center;
+    padding: 1rem 1rem;
+    margin-bottom: 2rem;
+    background: rgb(255, 0, 0);
+    border-style: none;
+    border-radius: 5px;
+  }
+  .backgroundsection1 button a {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgb(255, 0, 0);
+  }
+
+  .article-container {
+    width: 100%;
+
+    gap: 10px;
+    display: grid;
+
+    grid-template-areas:
+      "card1 "
+      "card2 "
+      "card3 "
+      "card4 ";
+  }
+
+  .main2 {
+    /* margin-left: 2rem;
+    margin-right: 2rem; */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: white;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+
+    display: grid;
+    grid-template-areas:
+      "titre1 img"
+      "texte1 img";
+  }
+
+  .main2 .textleft1 {
+    display: grid;
+    grid-template-areas:
+      "."
+      "titre1"
+      "texte1";
+
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .main2 h2 {
+    padding-bottom: 2rem;
+    grid-area: titre1;
+    font-size: 2rem;
+  }
+  .main2 p {
+    display: flex;
+    grid-area: texte1;
+  }
+
+  /* .main2 img{
+ width: 80%;
+   
+   
+  }  */
+  .textleft1 span {
+    color: aqua;
+  }
+  .intercard {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .intercard h2 {
+    color: aqua;
+    font-size: medium;
+  }
+  .intercard h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Styles pour les écrans petits (smartphones) */
+@media only screen and (max-width: 576px) {
+  .top {
+    background-color: #2e314b;
+
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "logo"
+      "adress";
+  }
+
+  .top address {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    grid-area: adress;
+  }
+.article1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    align-items: center;
+}
+  .article1text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    
+  }
+
+  .phone {
+    font-size: 1.2rem;
+  }
+
+  .logo {
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    padding-left: 50px;
+  }
+
+  .logo img {
+    grid-area: logo;
+    height: 100px;
+  }
+
+  .logo p {
+    font-size: 1.3rem;
+    color: rgb(154, 150, 150);
+  }
+
+  .logo p span {
+    color: yellow;
+  }
+
+  /* barre de nav */
+
+  .navcontainer {
+    font-size: 0.7rem;
+    display: grid;
+    background: grey;
+    /* justify-self: center;
+    align-self: center; */
+    padding-right: 2rem;
+   
+  }
+
+  .navbar {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    /* justify-self: end; */
+    align-self: center;
+    justify-content: space-around;
+    padding-left: 50px;
+  }
+
+  .logo a img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  nav ul {
+    /* display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
+    align-self: center;
+    justify-self: center; */
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+
+  nav a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+  nav ul li a:hover {
+    cursor: pointer;
+    color: #2e314b;
+    transition: 500ms;
+  }
+
+  .home {
+    display: none;
+  }
+  .iconhome {
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: flex;
+    width: 20px;
+  }
+  .contact {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+  }
+  .iconmail {
+    display: flex;
+    width: 20px;
+  }
+
+  main {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .backgroundsection1 {
+    display: grid;
+
+    grid-template-areas:
+      "h1 h1 h1 "
+      "button button button";
+    text-align: center;
+    gap: 0rem;
+
+    background-color: #2e314b;
+  }
+
+  .backgroundsection1 h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+
+    justify-self: center;
+    align-self: center;
+    grid-area: h1;
+    margin-top: 1rem;
+  }
+
+  .backgroundsection1 button {
+    grid-area: button;
+    justify-self: center;
+    align-self: center;
+    padding: 1rem 1rem;
+    margin-bottom: 2rem;
+    background: rgb(255, 0, 0);
+    border-style: none;
+    border-radius: 5px;
+  }
+  .backgroundsection1 button a {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgb(255, 0, 0);
+  }
+
+  .article-container {
+    width: 100%;
+
+    gap: 10px;
+    display: grid;
+
+    grid-template-areas:
+      "card1 "
+      "card2 "
+      "card3 "
+      "card4 ";
+  }
+
+  .main2 {
+    /* margin-left: 2rem;
+    margin-right: 2rem; */
+
+    background-color: white;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+
+    display: grid;
+    grid-template-areas:
+      "titre1"
+      "img";
+  }
+
+  .main2 .textleft1 {
+    display: grid;
+    grid-template-areas:
+      "titre1"
+      "texte1";
+
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .main2 h2 {
+    padding-bottom: 2rem;
+    grid-area: titre1;
+    font-size: 2rem;
+  }
+  .main2 p {
+    display: flex;
+    grid-area: texte1;
+  }
+
+  /* .main2 img{
+ width: 80%;
+   
+   
+  }  */
+  .textleft1 span {
+    color: aqua;
+  }
+  .intercard {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .intercard h2 {
+    color: aqua;
+    font-size: medium;
+  }
+  .intercard h3 {
+    font-size: 1.5rem;
+  }
+}
+/* form{
+  margin-left: 10rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  width: 80vh;
+  display: grid;
+ 
+  grid-template-areas: 
+  " firtsname name "
+  "  mail mail "
+  " message message  "
+  ;
+ gap: 2rem
+ ;
+
+}
+form input {
+  width: 80vh;
+}
+form label{
+  display: flex;
+  width: auto;
+}
+textarea{
+
+resize: none;
+ 
+} */
+/* .breadcrumb a {
+  
+  padding: 0 .5rem;
+}
+
+.breadcrumb ul li {
+  display: flex;
+  flex-direction: row-reverse;
+  display: flex;
+  
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+  
+.breadcrumb ul li:not(:last-child)::after {
+  display: inline-block;
+  margin: 0 .25rem;
+  content: "→";
+} */
+/* contact form */
+.formtext {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 5rem;
+}
+.formtext h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.formtext span {
+  color: cyan;
+}
+.formtext h3 {
+  color: grey;
+}
+
+form label {
+  color: grey;
+}
+.contact {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.formup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.contact label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.contact input,
+.contact textarea {
+  padding: 0.5rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-family: sans-serif;
+  width: 100%;
+  resize: none;
+}
+
+.contact button {
+  display: flex;
+  padding: 1rem 1.5rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+ 
+  border-radius: 0.25rem;
+  cursor: pointer;
+  justify-self: left;
+  margin-left: 2rem;
+}
+.contact button:hover{
+background: #000;
+  color: white;
+  box-shadow: 2px 2px 10px 2px #00ffff;
+}
+.formtext h1{
+  padding-top: 5rem;
+}
