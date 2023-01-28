@@ -472,7 +472,22 @@ footer address {
 
 @media only screen and (max-width: 1248px) {
   header {
-    height: 30vh;
+    height: 40vh;
+  }
+  .navcontainer {
+    display: grid;
+    background: gray;
+    /* justify-self: center;
+    align-self: center; */
+  
+    height: 10vh;
+  }
+  
+  .navbar {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    /* justify-self: end; */
+    align-self: center;
+    justify-content: space-around;
   }
 
   main {
@@ -594,9 +609,24 @@ footer address {
 /* Styles pour les écrans moyens (tablettes) */
 @media only screen and (max-width: 1023px) {
   header {
-    height: 30vh;
+    height: 40vh;
   }
-
+  .navcontainer {
+    display: grid;
+    background: grey;
+    /* justify-self: center;
+    align-self: center; */
+  
+    height: 10vh;
+    
+  }
+  
+  .navbar {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    /* justify-self: end; */
+    align-self: center;
+    justify-content: space-around;
+  }
   main {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -715,7 +745,7 @@ footer address {
 
 @media only screen and (max-width: 992px) {
   header {
-    height: 30vh;
+    height: 40vh;
   }
 
 
@@ -840,7 +870,7 @@ footer address {
 }
 @media only screen and (max-width: 768px) {
   header {
-    height: 30vh;
+    height: 40vh;
   }
 
   main {
